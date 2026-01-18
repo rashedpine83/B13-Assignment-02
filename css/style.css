@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: #1A0B2E;
+    max-width: 1600px;
+    position: relative;
+}
+.btn{
+    width: 135px;
+    padding: 13px 16px;
+    background-image: linear-gradient(#F7E93F, #FB09B4, #9100F8);
+    font-weight: 600;
+    color: white;
+    border-radius: 100px;
+}
+nav{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    padding-top: 30px;
+}
+.menu-item{
+    display: flex;
+    gap: 32px;
+}
+.menu-item a{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+.menu-item li{
+    list-style: none;
+}
+.head-section{
+    height: 760PX;
+    background: url(../images/hero-bg.png) no-repeat center/ cover;
+}
+.head-section .img-one{
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    padding-top: 101px;
+}
+.head-section .img-two{
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.head-content{
+    text-align: center;
+    color: white;
+}
