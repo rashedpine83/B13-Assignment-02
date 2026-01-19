@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+/* common style start */
 
 .inter-font {
   font-family: "Inter", sans-serif;
@@ -12,18 +13,33 @@
     padding: 0;
     box-sizing: border-box;
 }
-header{
-    background-color: #1A0B2E;
-    max-width: 1600px;
-    position: relative;
-}
 .btn{
     width: 135px;
     padding: 13px 16px;
-    background-image: linear-gradient(#F7E93F, #FB09B4, #9100F8);
+    background-image: linear-gradient(to top right, #F7E93F, #FB09B4, #9100F8);
     font-weight: 600;
     color: white;
     border-radius: 100px;
+    border: none;
+}
+.section-heading{
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+}
+.hr{
+    border-top: 1px solid #FFFFFF;
+    margin: 80px 0;
+}
+/* common style end */
+
+/* header style star */
+header{
+    background-color: #1A0B2E;
+    max-width: 1600px;
+    margin: 0 auto;
+    position: relative;
 }
 nav{
     display: grid;
@@ -59,7 +75,108 @@ nav{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.head-content{
+.techwave{
     text-align: center;
     color: white;
+    margin-top: 40px;
+    font-size: 3.75rem;
+}
+.section-des{
+    text-align: center;
+    color: white;
+    margin-top: 8px;
+    font-size: 1rem;
+}
+.head-button{
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+.btn-soptify{
+    width: 201px;
+}
+.btn-subscribe{
+    background-color: #1A0B2E;
+    width: 147px;
+    padding: 13px 16px;
+    font-weight: 600;
+    color: #00FF88;
+    border-radius: 100px;
+    border: 1px solid #00FF88;
+}
+/* header style end */
+
+/* main-area section one style start */
+.about-section{
+    background-color: #1A0B2E;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 50px 0 120px;
+    text-align: center;
+}
+.about-content{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.section-one-des{
+    color: white;
+    line-height: 20px;
+    margin-top: 16px;
+    margin-bottom: 80px;
+}
+.about-review{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}.review-content h1{
+    color: #00FF88;
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 16px;
+}
+.review-content p{
+    color: white;
+}
+/* main-area section one style end */
+
+.choose-section{
+    background-color: #230E3D;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 120px 0;
+}
+.choose-content{
+    max-width: 1200px;
+    margin: 0 auto;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+.choose-card{
+    background-color: rgba(53, 17, 101, 0.4);
+    border-radius: 40px;
+}
+.first-card{
+    grid-row: span 2;
+    padding: 107px 40px;
+}
+.second-card{
+    grid-column: span 2;
+    padding: 40px;
+}
+.third-card{
+    grid-column: span 2;
+    padding: 40px;
+}
+.fourth-card{
+    grid-column: span 2;
+    padding: 40px;
+}
+.fifth-card{
+    padding: 40px;
 }
