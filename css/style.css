@@ -24,6 +24,18 @@
     display: flex;
     gap: 8px;
     cursor: pointer;
+    animation: pulse 1.8s infinite;
+}
+@keyframes pulse {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
 }
 .section-heading{
     font-size: 3rem;
@@ -75,24 +87,30 @@ nav{
 }
 .head-section{
     min-height: 760PX;
-    background: url(../images/hero-bg.png) no-repeat center/ cover;
+    background-image: url(../images/hero-bg.png);
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: contain;
     width: 100%;
+}
+.head-image{
+    height: 450px;
 }
 .head-section .img-one{
     position: relative;
-    display: block;
-    margin: 0 auto;
-    padding-top: 101px;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .head-section .img-two{
     position: absolute;
-    top: 43%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 .btn-new{
     position: absolute;
-    top: 25%;
+    top: 24%;
     left: 57%;
     transform: translate(-50%, -50%);
     padding: 8px 16px;
@@ -100,6 +118,7 @@ nav{
     border-radius: 50px;
     border: none;
     cursor: pointer;
+    animation: pulse 1.8s infinite;
 }
 .techwave{
     text-align: center;
@@ -238,7 +257,6 @@ nav{
 }
 .feature-card h3{
     margin: 24px 24px 0;
-    /* margin-top: 24px; */
 }
 .feature-card p{
     margin: 12px 24px;
@@ -290,8 +308,11 @@ iframe{
     justify-content: center;
     align-items: center;
 }
+/* Meet-area style end */
+
+/* footer area style start */
 footer{
-    background: url(../images/footer-bg.png) no-repeat center/ cover;
+    background: url(../images/footer-bg.png) no-repeat center/ auto;
     max-width: 1600px;
     margin: 0 auto;
     padding: 120px 0;
@@ -327,6 +348,9 @@ footer{
     margin-top: 32px;
     line-height: 24px;
 }
+/* footer section end */
+
+/* midia Quary start */
 
 @media screen and (max-width:576px) {
     .menu, .btn-nav{
@@ -375,14 +399,15 @@ footer{
     }
     .feature-card{
         text-align: center;
-        width: 100%;
+        width: 90%;
+        margin: 0 auto;
     }
     .choose-card{
         margin: 0 20px;
     }
     .second-card{
-    grid-column: span 1;
-    padding: 40px;
+        grid-column: span 1;
+        padding: 40px;
     }
     .third-card{
         grid-column: span 1;
@@ -407,7 +432,93 @@ footer{
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
     }
+    .btn-new{
+        left: 63%;
+        top: 23%;
+    }
+}
 
+@media screen and (min-width:577px) and (max-width: 992px) {
+    .btn-new{
+        left: 60%;
+        top: 25%;
+    }
+    nav{
+        padding: 30px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+        gap: 50px;
+    }
+    .btn{
+        display: flex;
+        justify-items: center;
+    }
+    .section-one-des{
+        padding: 0 20px;
+    }
+    .about-review{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+    .about-section{
+        padding: 40px 0;
+    }
+    .choose-content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .first-card{
+        padding: 40px;
+        grid-row: span 1;
+    }
+    .second-card{
+    grid-column: span 1;
+    padding: 40px;
+    }
+    .third-card{
+        grid-column: span 1;
+        padding: 40px;
+    }
+    .fourth-card{
+        grid-column: span 1;
+        padding: 40px;
+    }
+    .second-card{
+        grid-column: span 1;
+        padding: 40px;
+    }
+    .third-card{
+        grid-column: span 1;
+        padding: 40px;
+    }
+    .fourth-card{
+        grid-column: span 1;
+        padding: 40px;
+    }
+    .choose-card{
+        margin: 0 20px;
+    }
+    .feature-content{
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-items: center;
+        margin: 0 20px;
+        gap: 50px;
+    }
+    .feature-section{
+        padding: 40px 0;
+    }
+    .feature-card{
+        text-align: center;
+        width: 60%;
+        margin: 0 auto;
+    }
+    .head-section .img-one{
+        top: 45%;
+    }
+    .meet-container{
+        margin: 0 20px;
+    }
 } 
 
 
