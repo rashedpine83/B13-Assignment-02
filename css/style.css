@@ -52,6 +52,9 @@ header{
     margin: 0 auto;
     position: relative;
 }
+.hamburger{
+    display: none;
+}
 nav{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -71,8 +74,9 @@ nav{
     list-style: none;
 }
 .head-section{
-    height: 760PX;
+    min-height: 760PX;
     background: url(../images/hero-bg.png) no-repeat center/ cover;
+    width: 100%;
 }
 .head-section .img-one{
     position: relative;
@@ -146,9 +150,9 @@ nav{
 }
 .section-one-des{
     color: white;
+    padding: 0 230px;
     line-height: 20px;
     margin-top: 16px;
-    margin-bottom: 80px;
 }
 .about-review{
     display: grid;
@@ -229,6 +233,7 @@ nav{
     background-color: #250D44;
     border-radius: 20px;
     margin-top: 40px;
+    width: 100%;
     
 }
 .feature-card h3{
@@ -294,8 +299,6 @@ footer{
 }
 .footer-link-container{
     display: flex;
-    /* grid-template-columns: repeat(4, 1fr); */
-    /* max-width: 650px; */
     margin: 0 auto;
     gap: 40px;
     justify-content: center;
@@ -325,5 +328,86 @@ footer{
     line-height: 24px;
 }
 
+@media screen and (max-width:576px) {
+    .menu, .btn-nav{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+        justify-content: end;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+    }
+    .section-one-des{
+        padding: 0 20px;
+    }
+    .about-review{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+    .about-section{
+        padding: 40px 0;
+    }
+    .choose-content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .first-card{
+        padding: 40px;
+        grid-row: span 1;
+    }
+    .section-heading{
+        font-size: 2rem;
+    }
+    .choose-section{
+        padding: 40px 0;
+    }
+    .feature-content{
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-items: center;
+        margin: 0 20px;
+    }
+    .feature-section{
+        padding: 40px 0;
+    }
+    .feature-card{
+        text-align: center;
+        width: 100%;
+    }
+    .choose-card{
+        margin: 0 20px;
+    }
+    .second-card{
+    grid-column: span 1;
+    padding: 40px;
+    }
+    .third-card{
+        grid-column: span 1;
+        padding: 40px;
+    }
+    .fourth-card{
+        grid-column: span 1;
+        padding: 40px;
+    }
+    .meet-section{
+        padding: 40px 0;
+    }
+    .meet-container{
+        flex-direction: column;
+        text-align: center;
+    }
+    .social-link{
+        justify-content: center;
+    }
+    .footer-link-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+} 
 
 
